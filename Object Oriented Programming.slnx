@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="oop_part1/oop_part1.csproj" />
+</Solution>
