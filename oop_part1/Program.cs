@@ -4,24 +4,48 @@ namespace oop_part1
 {
     public class Room
     {
-
+        //Attributes
         public int roomNumber;
-        public string roomType { get; set; }
-        public double pricePerNight { get; set; }
-        public bool isAvailable { get; set; }
+        public string roomType;
+        public double pricePerNight;
+        public bool isAvailable;
+        //Methods
+        public void displayRoom()
+        {
+            Console.WriteLine(roomNumber);
+            Console.WriteLine(roomType);
+            Console.WriteLine(pricePerNight);
+            Console.WriteLine(isAvailable);
+        }
     }
     public class Guest
     {
+        //Attributes
+        private int guestId;
+        public string guestName;
+        public string roomNumber;
+        public string checkInDate;
+        public string totalNights;
 
-        public int guestId;
-        public string guestName { get; set; }
-        public string roomNumber { get; set; }
-        public string checkInDate { get; set; }
-        public string totalNights { get; set; }
+        //Methods
+        public void displayGuest()
+        {
+            Console.WriteLine(guestId);
+            Console.WriteLine(guestName);
+            Console.WriteLine(roomNumber);
+            Console.WriteLine(checkInDate);
+         
+        }
+        public void calculateTotalCost()
+        {
+
+        }
+
+
     }
     internal class Program
     {
-        public static void mainMenu()
+        public static void mainMenu()//main menu function
         {
             Console.WriteLine("================================================");
             Console.WriteLine("GRAND VISTA HOTEL — MANAGEMENT SYSTEM");
