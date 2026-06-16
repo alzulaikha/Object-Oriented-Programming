@@ -23,7 +23,8 @@ namespace oop_part1
     {
         static void Main(string[] args)
         {
-            
+            List<Room> rooms = new List<Room>();
+            List<Guest> guests = new List<Guest>();
         }
     }
 }
