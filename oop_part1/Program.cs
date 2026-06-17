@@ -27,8 +27,8 @@ namespace oop_part1
         public string roomNumber;
         public string checkInDate;
         public int totalNights;
-         public double pricePerNight;
 
+        public double pricePerNight;
         //Methods
         public void displayGuest()
         {
@@ -37,7 +37,6 @@ namespace oop_part1
             Console.WriteLine("Room Number: " + roomNumber);
             Console.WriteLine("Check In Date: " + checkInDate);
             Console.WriteLine("Total Of Nights: "+totalNights);
-            Console.WriteLine("Price Per Night"+pricePerNight);
 
         }
 
@@ -185,6 +184,7 @@ namespace oop_part1
                             }
                             selectedRoom.roomNumber = selectedGuest.roomNumber;
                             selectedRoom.isAvailable = false;
+                            selectedGuest.pricePerNight=selectedRoom.pricePerNight;
 
                             Console.WriteLine("Guest Name: "+selectedGuest.guestName);
                             Console.WriteLine("Room Number: "+selectedRoom.roomNumber);
